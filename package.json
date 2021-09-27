@@ -1,0 +1,25 @@
+{
+  "name": "contatooh",
+  "version": "1.0.0",
+  "description": "So mais um projeto node",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "test": "NODE_ENV=test node server.js",
+    "production": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danilodcn/contatooh.git"
+  },
+  "author": "Danilo Nascimento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danilodcn/contatooh/issues"
+  },
+  "homepage": "https://github.com/Danilodcn/contatooh#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
