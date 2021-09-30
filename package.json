@@ -20,6 +20,8 @@
   "homepage": "https://github.com/Danilodcn/contatooh#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-load": "^1.1.16"
   }
 }
