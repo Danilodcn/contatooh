@@ -3,7 +3,7 @@
 
 module.exports = (app) => {
     var controller = app.controllers.home; 
-    app.get("/index", controller.index)
+    app.get("/index/old", controller.index)
     app.get("/", controller.index)
     return app;
 }

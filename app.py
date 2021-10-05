@@ -4,7 +4,7 @@ from sys import argv
 
 
 base = "http://localhost:8080"
-url = f"/contatos/{argv[1]}"
+url = "/contatos"
 
 x = requests.get(base + url)
 try: 

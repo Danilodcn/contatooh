@@ -1,6 +1,8 @@
 var express = require("express");
 // var home = require("../app/routes/home");
 var load = require("express-load");
+var bodyParser = require("body-parser");
+var methodOverride = require("method-override");
 
 module.exports = function () {
     var app = express();
@@ -9,8 +11,11 @@ module.exports = function () {
     app.set("port", process.env.PORT);
     
     // middleware
-    // app.use(express.static("./public"))
-
+    app.use(express.static("./public"))
+    app.use(express.json());
+    app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(bodyParser.json());
+    app.use(methodOverride());
 
     // config views
     app.set("view engine", "ejs");

@@ -1,13 +1,6 @@
-module.exports = function (lista, k){
+var getRandomInt = require("./getRandomInt")
 
-    retorno = [];
-    lista.forEach( (elem) => {
-
-        a = [1, 2]
-
-        if (Math.random() < 0.5) {
-            retorno.push(elem);
-        }
-
-    });
+module.exports = function (lista){
+    n = getRandomInt(0, lista.length);
+    return lista[n];
 }
